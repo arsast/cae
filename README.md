@@ -2,7 +2,7 @@
 
 The module produces context-aware embeddings for text documents (utilizes their surrounding features, a.k.a. context). So far, only unsupervised version of the algorithm is implemented.
 
-The concept behind is relatively easy. We basically average documents words vectors, normalize the sum-vector and extract from the obtained embeddings their projection to the principal components which construction is guided through hybrid SVD and additional knowledge of documents context.
+The concept behind is relatively easy. We basically average documents words vectors (could be any like [w2v](https://code.google.com/archive/p/word2vec/), [glove](https://nlp.stanford.edu/projects/glove/), [fasttext](https://github.com/facebookresearch/fastText) or your own), normalize the sum-vector and extract from the obtained embeddings their projection to the principal components which construction is guided through hybrid SVD and additional knowledge of documents context.
 
 
 The work inspired by the following papers: 
