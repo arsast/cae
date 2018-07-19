@@ -12,7 +12,11 @@ The work inspired by the following papers:
 
 Dependences:
 
-- [cholmod](https://github.com/scikit-sparse/scikit-sparse/) (python wrapper for sparse Choletsky decomposition)
+- cholmod [[docs]](https://scikit-sparse.readthedocs.io/en/latest/index.html) (python wrapper for sparse Choletsky decomposition)
+  ```
+  brew install suite-sparse
+  pip install scikit-sparse
+  ```
 - scipy (svd routine)
 - numpy
 
