@@ -16,5 +16,14 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+    ],
+    license = "MIT",
+    install_requires = [
+        "joblib == 0.13.2",
+        "numpy == 1.16.3",
+        "scikit - learn == 0.21.1",
+        "scikit - sparse == 0.4.4",
+        "scipy == 1.2.1",
+        "sklearn == 0.0"
     ]
 )
