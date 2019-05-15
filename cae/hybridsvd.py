@@ -6,6 +6,7 @@ import numpy as np
 import scipy as sp
 from scipy.sparse import linalg
 from sksparse.cholmod import cholesky
+from sklearn.decomposition import TruncatedSVD
 
 
 # note: out-of-date version
@@ -136,8 +137,6 @@ class HybridSVD:
         Compute the principal components. DO NOT MAKE THE DATA ZERO MEAN!
         : return: components_[i,:] is the i-th pc
         """
-        from sklearn.decomposition import TruncatedSVD
-
         svd = TruncatedSVD(n_components=self.npc, n_iter=7,
                            random_state=self.seed)
         svd.fit(self.X)
